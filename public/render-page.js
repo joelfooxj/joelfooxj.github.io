@@ -1652,7 +1652,7 @@ function stripPrefix(str, prefix = ``) {
 
 
 module.exports = {
-  url: 'joelfooxj.github.io',
+  url: 'https://joelfooxj.github.io/',
   pathPrefix: '/',
   title: 'Joel\'s Brain Repo',
   subtitle: 'A central repository of ramblings about code and other things.',
@@ -1680,10 +1680,10 @@ module.exports = {
       facebook: '',
       telegram: '',
       twitter: '',
-      github: 'joelfooxj.github.com',
+      github: 'joelfooxj',
       rss: '',
       vkontakte: '',
-      linkedin: 'joelfooxj.linkedin.com',
+      linkedin: 'joelfooxj',
       instagram: '',
       line: '',
       gitlab: '',
