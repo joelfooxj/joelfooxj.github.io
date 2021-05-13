@@ -1,14 +1,26 @@
 var plugins = [{
-      plugin: require('/Users/joel.foo.xj/joelfooxj.github.io/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
-      options: {"plugins":[],"head":false,"anonymize":false,"respectDNT":false,"exclude":[],"pageTransitionDelay":0},
+      plugin: require('/Users/joel.foo.xj/blog/joelfooxj.github.io/node_modules/gatsby-plugin-feed/gatsby-ssr'),
+      options: {"plugins":[],"query":"\n          {\n            site {\n              siteMetadata {\n                site_url: url\n                title\n                description: subtitle\n              }\n            }\n          }\n        ","feeds":[{"query":"\n              {\n                allMarkdownRemark(\n                  limit: 1000,\n                  sort: { order: DESC, fields: [frontmatter___date] },\n                  filter: { frontmatter: { template: { eq: \"post\" }, draft: { ne: true } } }\n                ) {\n                  edges {\n                    node {\n                      html\n                      fields {\n                        slug\n                      }\n                      frontmatter {\n                        title\n                        date\n                        template\n                        draft\n                        description\n                      }\n                    }\n                  }\n                }\n              }\n            ","output":"/rss.xml","title":"Joel's Brain Repo"}]},
     },{
-      plugin: require('/Users/joel.foo.xj/joelfooxj.github.io/node_modules/gatsby-plugin-feed/gatsby-ssr'),
+      plugin: require('/Users/joel.foo.xj/blog/joelfooxj.github.io/node_modules/gatsby-remark-autolink-headers/gatsby-ssr'),
+      options: {"plugins":[],"offsetY":0,"className":"anchor"},
+    },{
+      plugin: require('/Users/joel.foo.xj/blog/joelfooxj.github.io/node_modules/gatsby-plugin-google-gtag/gatsby-ssr'),
+      options: {"plugins":[],"trackingIds":[""],"pluginConfig":{"head":true}},
+    },{
+      plugin: require('/Users/joel.foo.xj/blog/joelfooxj.github.io/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      options: {"plugins":[],"query":"\n          {\n            site {\n              siteMetadata {\n                siteUrl: url\n              }\n            }\n            allSitePage(\n              filter: {\n                path: { regex: \"/^(?!/404/|/404.html|/dev-404-page/)/\" }\n              }\n            ) {\n              edges {\n                node {\n                  path\n                }\n              }\n            }\n          }\n        ","output":"/sitemap.xml","createLinkInHead":true},
+    },{
+      plugin: require('/Users/joel.foo.xj/blog/joelfooxj.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"Joel's Brain Repo","short_name":"Joel's Brain Repo","start_url":"/","background_color":"#FFF","theme_color":"#F7A046","display":"standalone","icon":"static/photo.jpg","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"0c8fafc8bef8cc5e681b4713fc1affdb"},
+    },{
+      plugin: require('/Users/joel.foo.xj/blog/joelfooxj.github.io/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      options: {"plugins":[],"workboxConfig":{"runtimeCaching":[{"urlPattern":{},"handler":"CacheFirst"},{"urlPattern":{},"handler":"StaleWhileRevalidate"},{"urlPattern":{},"handler":"StaleWhileRevalidate"},{"urlPattern":{},"handler":"StaleWhileRevalidate"}]}},
+    },{
+      plugin: require('/Users/joel.foo.xj/blog/joelfooxj.github.io/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/joel.foo.xj/joelfooxj.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Gatsby Starter Blog","short_name":"GatsbyJS","start_url":"/","background_color":"#ffffff","theme_color":"#663399","display":"minimal-ui","icon":"content/assets/jfxjlogo.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":null},
-    },{
-      plugin: require('/Users/joel.foo.xj/joelfooxj.github.io/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/joel.foo.xj/blog/joelfooxj.github.io/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

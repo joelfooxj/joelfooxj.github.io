@@ -1,10 +1,4 @@
-// custom typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
-// normalize CSS across browsers
-import "./src/normalize.css"
-// custom CSS styles
-import "./src/style.css"
+'use strict';
 
-// Highlighting for code blocks
-import "prismjs/themes/prism.css"
+require('./src/assets/scss/init.scss');
+require('./static/css/prismjs/theme.min.css');

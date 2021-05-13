@@ -3,9 +3,13 @@ const preferDefault = m => (m && m.default) || m
 
 exports.components = {
   "component---cache-dev-404-page-js": () => import("./../../dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
-  "component---src-pages-404-js": () => import("./../../../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
-  "component---src-pages-index-js": () => import("./../../../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
-  "component---src-pages-using-typescript-tsx": () => import("./../../../src/pages/using-typescript.tsx" /* webpackChunkName: "component---src-pages-using-typescript-tsx" */),
-  "component---src-templates-blog-post-js": () => import("./../../../src/templates/blog-post.js" /* webpackChunkName: "component---src-templates-blog-post-js" */)
+  "component---src-templates-categories-list-template-js": () => import("./../../../src/templates/categories-list-template.js" /* webpackChunkName: "component---src-templates-categories-list-template-js" */),
+  "component---src-templates-category-template-js": () => import("./../../../src/templates/category-template.js" /* webpackChunkName: "component---src-templates-category-template-js" */),
+  "component---src-templates-index-template-js": () => import("./../../../src/templates/index-template.js" /* webpackChunkName: "component---src-templates-index-template-js" */),
+  "component---src-templates-not-found-template-js": () => import("./../../../src/templates/not-found-template.js" /* webpackChunkName: "component---src-templates-not-found-template-js" */),
+  "component---src-templates-page-template-js": () => import("./../../../src/templates/page-template.js" /* webpackChunkName: "component---src-templates-page-template-js" */),
+  "component---src-templates-post-template-js": () => import("./../../../src/templates/post-template.js" /* webpackChunkName: "component---src-templates-post-template-js" */),
+  "component---src-templates-tag-template-js": () => import("./../../../src/templates/tag-template.js" /* webpackChunkName: "component---src-templates-tag-template-js" */),
+  "component---src-templates-tags-list-template-js": () => import("./../../../src/templates/tags-list-template.js" /* webpackChunkName: "component---src-templates-tags-list-template-js" */)
 }
 
