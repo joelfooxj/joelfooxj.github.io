@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'joelfooxj.github.io',
+  url: 'https://joelfooxj.github.io/',
   pathPrefix: '/',
   title: 'Joel\'s Brain Repo',
   subtitle: 'A central repository of ramblings about code and other things.',
@@ -33,10 +33,10 @@ module.exports = {
       facebook: '',
       telegram: '',
       twitter: '',
-      github: 'joelfooxj.github.com',
+      github: 'https://github.com/joelfooxj',
       rss: '',
       vkontakte: '',
-      linkedin: 'joelfooxj.linkedin.com',
+      linkedin: 'https://www.linkedin.com/in/joelfooxj/',
       instagram: '',
       line: '',
       gitlab: '',

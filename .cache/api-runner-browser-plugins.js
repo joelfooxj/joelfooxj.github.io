@@ -12,7 +12,7 @@ module.exports = [{
       options: {"plugins":[],"trackingIds":[""],"pluginConfig":{"head":true}},
     },{
       plugin: require('../node_modules/gatsby-plugin-manifest/gatsby-browser.js'),
-      options: {"plugins":[],"name":"Joel's Brain Repo","short_name":"Joel's Brain Repo","start_url":"/","background_color":"#FFF","theme_color":"#F7A046","display":"standalone","icon":"static/photo.jpg","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"0c8fafc8bef8cc5e681b4713fc1affdb"},
+      options: {"plugins":[],"name":"Joel's Brain Repo","short_name":"Joel's Brain Repo","start_url":"/","background_color":"#FFF","theme_color":"#F7A046","display":"standalone","icon":"static/jfxjlogo.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"55521b6707f6a7b44f73386a34e76049"},
     },{
       plugin: require('../node_modules/gatsby-plugin-offline/gatsby-browser.js'),
       options: {"plugins":[],"workboxConfig":{"runtimeCaching":[{"urlPattern":{},"handler":"CacheFirst"},{"urlPattern":{},"handler":"StaleWhileRevalidate"},{"urlPattern":{},"handler":"StaleWhileRevalidate"},{"urlPattern":{},"handler":"StaleWhileRevalidate"}]}},
