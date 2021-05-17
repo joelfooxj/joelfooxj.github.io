@@ -5,7 +5,7 @@ const preferDefault = m => (m && m.default) || m
 
 
 exports.components = {
-  "component---cache-dev-404-page-js": (preferDefault(require("/Users/joel.foo.xj/blog/joelfooxj.github.io/.cache/dev-404-page.js"))),
+  "component---cache-caches-gatsby-plugin-offline-app-shell-js": (preferDefault(require("/Users/joel.foo.xj/blog/joelfooxj.github.io/.cache/caches/gatsby-plugin-offline/app-shell.js"))),
   "component---src-templates-categories-list-template-js": (preferDefault(require("/Users/joel.foo.xj/blog/joelfooxj.github.io/src/templates/categories-list-template.js"))),
   "component---src-templates-category-template-js": (preferDefault(require("/Users/joel.foo.xj/blog/joelfooxj.github.io/src/templates/category-template.js"))),
   "component---src-templates-index-template-js": (preferDefault(require("/Users/joel.foo.xj/blog/joelfooxj.github.io/src/templates/index-template.js"))),
