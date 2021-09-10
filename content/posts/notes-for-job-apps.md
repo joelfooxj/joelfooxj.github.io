@@ -46,11 +46,19 @@ I think I ramble too much. Verbalizing your thoughts does not equate to articula
 ## Conclusion 
 Still weak, need to grind more leetcode in the meantime. Have scheduled another attempt on July 18. Will update. 
 
+## Update 
+Completed second Karat attempt. Was not successful, in my opinion. Took too long on the first technical challenge, which ate into the time for the second technical challenge, which was actually easier.
  
+## TouchBistro
+Was referred by someone to a team lead, which led to a recommendation for an interview by HR. I had a short discovery conversation with HR, and then a week-long technical assignment a couple of days later. The assignment was a full-stack project including testing. Functionality was fairly simple, and was complete within the first 2 days. I had no experience with testing, and so was stuck figuring out both the mindset/objectives required to test both the front-end and the back-end. I had the most trouble with React testing since I was not aware that the optimal testing platform (as of this update) is the testing-library [framework] (https://github.com/testing-library/react-testing-library) by Kent C. Dodds.
 
-  
+Evaluators were apparently satisfied with my code and testing harness, and so proceeded to schedule a series of interviews with team members. Most of them was behavioural, and there was one 1.5hr long technical discussion of my code, as well as a system design question. The question was to describe my design for a Twitter like service. Unfortunately, I was not prepared and blanked. 
 
-	
+### Improving response for system design questions
+This is a shortcoming, though perhaps part of it was my nervousness and not knowing how to approach the problem. I suppose is related to how to approach unknown leetcode problems. Here are some notes about an initial approach:
+- It's a service: how should it appear to users? 
+- What are the constraints? 
+Essentially, it's still about knowing how to construct a framework of understanding for yourself when first encountering a problem that is unknown. 
 
-
-
+### Offer
+Apparently, that questions was perhaps for someone who was at a Senior Developer position, and so I was offered a Full-Stack Developer 3 position, which is roughly intermediate level. I'm not sure how to perform; this is the first time I'll be coding in a professional capacity. We shall see. 
